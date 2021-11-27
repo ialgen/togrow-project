@@ -1,0 +1,26 @@
+[
+  {
+    "name": "ourVision",
+    "path": "/ourVision",
+    "component": "/Users/ialgen/Desktop/Prog/togrow-app/pages/ourVision.vue",
+    "chunkName": "pages/ourVision"
+  },
+  {
+    "name": "presentation",
+    "path": "/presentation",
+    "component": "/Users/ialgen/Desktop/Prog/togrow-app/pages/presentation.vue",
+    "chunkName": "pages/presentation"
+  },
+  {
+    "name": "women",
+    "path": "/women",
+    "component": "/Users/ialgen/Desktop/Prog/togrow-app/pages/women.vue",
+    "chunkName": "pages/women"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/ialgen/Desktop/Prog/togrow-app/pages/index.vue",
+    "chunkName": "pages/index"
+  }
+]

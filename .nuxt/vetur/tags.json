@@ -1,0 +1,14 @@
+{
+  "Footer": {
+    "description": "Auto imported from components/footer.vue"
+  },
+  "HeaderHome": {
+    "description": "Auto imported from components/header/home.vue"
+  },
+  "HeaderPages": {
+    "description": "Auto imported from components/header/pages.vue"
+  },
+  "LogoMain": {
+    "description": "Auto imported from components/logo/main.vue"
+  }
+}
