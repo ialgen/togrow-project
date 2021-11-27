@@ -2,11 +2,11 @@
   <div>
     <HeaderPages/>
     <div class="max-w-2xl mx-auto py-10 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-      <h2 class="text-4xl text-center pb-10 font-bold">Women</h2>
+      <h2 class="text-4xl text-center pb-10 font-bold">Men</h2>
       <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:gap-x-8">
         <a v-for="product in products" :key="product.id" :href="product.href" class="group">
           <div class="w-full aspect-w-1 aspect-h-1 rounded-lg overflow-hidden sm:aspect-w-2 sm:aspect-h-3">
-            <img src="~assets/pictures/habit_femme.jpeg" class="w-full h-full object-center object-cover group-hover:opacity-75" />
+            <img src="~assets/pictures/habit_homme.jpeg" class="w-full h-full object-center object-cover group-hover:opacity-75" />
           </div>
           <div class="mt-4 flex items-center justify-between text-base font-medium text-gray-900">
             <h3>
@@ -57,42 +57,42 @@
 const products = [
   {
     id: 1,
-    name: 'Dress',
+    name: 'T-shirt',
     href: '#',
     price: '$13',
     description: '3 sizes available',
   },
   {
     id: 2,
-    name: 'Dress',
+    name: 'T-shirt',
     href: '#',
     price: '$64',
     description: '3 sizes available',
   },
   {
     id: 3,
-    name: 'Dress',
+    name: 'T-shirt',
     href: '#',
     price: '$32',
     description: '3 sizes available',
   },
   {
     id: 4,
-    name: 'Dress',
+    name: 'T-shirt',
     href: '#',
     price: '$13',
     description: '3 sizes available',
   },
   {
     id: 5,
-    name: 'Dress',
+    name: 'T-shirt',
     href: '#',
     price: '$64',
     description: '3 sizes available',
   },
   {
     id: 6,
-    name: 'Dress',
+    name: 'T-shirt',
     href: '#',
     price: '$32',
     description: '3 sizes available',

@@ -44,24 +44,8 @@
                                 <!-- Flyout menus -->
                                 <div class="px-4 bottom-0 inset-x-0">
                                     <div class="h-full flex justify-center space-x-8">
-                                        <div class="flex">
-                                            <div class="relative flex">
-                                                <button type="button" class="relative z-10 flex items-center justify-center transition-colors ease-out duration-200 text-sm font-medium text-white" aria-expanded="false">
-                                                    Women
-                                                    <!-- Open: "bg-white", Closed: "" -->
-                                                    <span class="absolute -bottom-px inset-x-0 h-0.5 transition ease-out duration-200" aria-hidden="true"></span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="flex">
-                                            <div class="relative flex">
-                                                <button type="button" class="relative z-10 flex items-center justify-center transition-colors ease-out duration-200 text-sm font-medium text-white" aria-expanded="false">
-                                                    Men
-                                                    <!-- Open: "bg-white", Closed: "" -->
-                                                    <span class="absolute -bottom-px inset-x-0 h-0.5 transition ease-out duration-200" aria-hidden="true"></span>
-                                                </button>
-                                            </div>                            
-                                        </div>
+                                        <a href="/women" class="flex items-center text-sm font-medium text-white">Women</a>
+                                        <a href="/men" class="flex items-center text-sm font-medium text-white">Men</a>
                                         <a href="/presentation" class="flex items-center text-sm font-medium text-white">About us</a>
                                     </div>
                                 </div>

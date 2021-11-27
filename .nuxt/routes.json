@@ -1,26 +1,37 @@
 [
   {
+    "name": "men",
+    "path": "/men",
+    "component": "/Users/ialgen/Desktop/Prog/togrow-app/pages/men.vue",
+    "chunkName": "pages/men",
+    "_name": "_3b7bf3f6"
+  },
+  {
     "name": "ourVision",
     "path": "/ourVision",
     "component": "/Users/ialgen/Desktop/Prog/togrow-app/pages/ourVision.vue",
-    "chunkName": "pages/ourVision"
+    "chunkName": "pages/ourVision",
+    "_name": "_2dbd3243"
   },
   {
     "name": "presentation",
     "path": "/presentation",
     "component": "/Users/ialgen/Desktop/Prog/togrow-app/pages/presentation.vue",
-    "chunkName": "pages/presentation"
+    "chunkName": "pages/presentation",
+    "_name": "_04a6c5fb"
   },
   {
     "name": "women",
     "path": "/women",
     "component": "/Users/ialgen/Desktop/Prog/togrow-app/pages/women.vue",
-    "chunkName": "pages/women"
+    "chunkName": "pages/women",
+    "_name": "_5bb44a6d"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/ialgen/Desktop/Prog/togrow-app/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_06ec3d7e"
   }
 ]
