@@ -21,6 +21,13 @@
     "_name": "_04a6c5fb"
   },
   {
+    "name": "tests",
+    "path": "/tests",
+    "component": "/Users/ialgen/Desktop/Prog/togrow-app/pages/tests.vue",
+    "chunkName": "pages/tests",
+    "_name": "_314071e0"
+  },
+  {
     "name": "women",
     "path": "/women",
     "component": "/Users/ialgen/Desktop/Prog/togrow-app/pages/women.vue",

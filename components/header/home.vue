@@ -2,20 +2,17 @@
     <header class="relative z-10">
         <nav aria-label="Top">
             <!-- Top navigation -->
-            <div class="bg-gray-900">
+            <div class="bg-indigo-600">
                 <div class="max-w-7xl mx-auto h-10 px-4 flex items-center justify-between sm:px-6 lg:px-8">
                     <!-- Currency selector -->
                     <form>
                         <div>
                             <label for="desktop-currency" class="sr-only">Currency</label>
-                            <div class="-ml-2 group relative bg-gray-900 border-transparent rounded-md focus-within:ring-2 focus-within:ring-white">
-                                <select id="desktop-currency" name="currency" class="bg-none bg-gray-900 border-transparent rounded-md py-0.5 pl-2 pr-5 flex items-center text-sm font-medium text-white group-hover:text-gray-100 focus:outline-none focus:ring-0 focus:border-transparent">
+                            <div class="-ml-2 group relative bg-indigo-600 border-transparent rounded-md focus-within:ring-2 focus-within:ring-white">
+                                <select class="bg-none bg-indigo-600 border-transparent rounded-md px-2 py-1 flex items-center text-sm font-medium text-white group-hover:text-gray-100 focus:outline-none focus:ring-0 focus:border-transparent">
                                     <option>EUR</option>
-
-                                    <option>XOF</option>
+                                    <option>CFA</option>
                                 </select>
-                                <div class="absolute right-0 inset-y-0 flex items-center pointer-events-none">
-                                </div>
                             </div>
                         </div>
                     </form>
@@ -28,13 +25,13 @@
             </div>
 
             <!-- Secondary navigation -->
-            <div class="backdrop-blur-md backdrop-filter bg-opacity-10 bg-white">
+            <div class="backdrop-blur-md backdrop-filter bg-opacity-30 bg-indigo-600">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div>
                         <div class="h-16 flex items-center justify-between">
                             <!-- Logo (lg+) -->
                             <div class=" flex-1 flex items-center">
-                            <a href="#">
+                            <a href="/">
                                 <span class="sr-only">Workflow</span>
                                 <LogoMain/>
                             </a>

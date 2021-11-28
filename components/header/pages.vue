@@ -2,20 +2,18 @@
     <header class="relative z-10">
         <nav aria-label="Top">
             <!-- Top navigation -->
-            <div class="bg-gray-900">
+            <div class="bg-indigo-600">
                 <div class="max-w-7xl mx-auto h-10 px-4 flex items-center justify-between sm:px-6 lg:px-8">
                     <!-- Currency selector -->
                     <form>
                         <div>
                             <label for="desktop-currency" class="sr-only">Currency</label>
-                            <div class="-ml-2 group relative bg-gray-900 border-transparent rounded-md focus-within:ring-2 focus-within:ring-white">
-                                <select id="desktop-currency" name="currency" class="bg-none bg-gray-900 border-transparent rounded-md py-0.5 pl-2 pr-5 flex items-center text-sm font-medium text-white group-hover:text-gray-100 focus:outline-none focus:ring-0 focus:border-transparent">
+                            <div class="-ml-2 group relative bg-indigo-600 border-transparent rounded-md focus-within:ring-2 focus-within:ring-white">
+                                <select class="bg-none bg-indigo-600 border-transparent rounded-md py-0.5 pl-2 pr-5 flex items-center text-sm font-medium text-white group-hover:text-gray-100 focus:outline-none focus:ring-0 focus:border-transparent">
                                     <option>EUR</option>
 
-                                    <option>XOF</option>
+                                    <option>CFA</option>
                                 </select>
-                                <div class="absolute right-0 inset-y-0 flex items-center pointer-events-none">
-                                </div>
                             </div>
                         </div>
                     </form>
@@ -28,7 +26,7 @@
             </div>
 
             <!-- Secondary navigation -->
-            <div class="bg-opacity-30 bg-black">
+            <div class="bg-opacity-60 bg-indigo-600">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div>
                         <div class="h-16 flex items-center justify-between">
@@ -44,26 +42,9 @@
                                 <!-- Flyout menus -->
                                 <div class="px-4 bottom-0 inset-x-0">
                                     <div class="h-full flex justify-center space-x-8">
-                                        <div class="flex">
-                                            <div class="relative flex">
-                                                <button type="button" class="relative z-10 flex items-center justify-center transition-colors ease-out duration-200 text-sm font-medium text-white" aria-expanded="false">
-                                                    Women
-                                                    <!-- Open: "bg-white", Closed: "" -->
-                                                    <span class="absolute -bottom-px inset-x-0 h-0.5 transition ease-out duration-200" aria-hidden="true"></span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="flex">
-                                            <div class="relative flex">
-                                                <button type="button" class="relative z-10 flex items-center justify-center transition-colors ease-out duration-200 text-sm font-medium text-white" aria-expanded="false">
-                                                    Men
-                                                    <!-- Open: "bg-white", Closed: "" -->
-                                                    <span class="absolute -bottom-px inset-x-0 h-0.5 transition ease-out duration-200" aria-hidden="true"></span>
-                                                </button>
-                                            </div>                            
-                                        </div>
-                                        <a href="#" class="flex items-center text-sm font-medium text-white">Company</a>
-                                        <a href="#" class="flex items-center text-sm font-medium text-white">Stores</a>
+                                        <a href="/women" class="flex items-center text-sm font-medium text-white">Women</a>
+                                        <a href="/men" class="flex items-center text-sm font-medium text-white">Men</a>
+                                        <a href="/presentation" class="flex items-center text-sm font-medium text-white">About us</a>
                                     </div>
                                 </div>
                             </div>
