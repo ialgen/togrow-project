@@ -1,30 +1,6 @@
 <template>
     <header class="relative z-10">
         <nav aria-label="Top">
-            <!-- Top navigation -->
-            <div class="bg-indigo-600">
-                <div class="max-w-7xl mx-auto h-10 px-4 flex items-center justify-between sm:px-6 lg:px-8">
-                    <!-- Currency selector -->
-                    <form>
-                        <div>
-                            <label for="desktop-currency" class="sr-only">Currency</label>
-                            <div class="-ml-2 group relative bg-indigo-600 border-transparent rounded-md focus-within:ring-2 focus-within:ring-white">
-                                <select class="bg-none bg-indigo-600 border-transparent rounded-md py-0.5 pl-2 pr-5 flex items-center text-sm font-medium text-white group-hover:text-gray-100 focus:outline-none focus:ring-0 focus:border-transparent">
-                                    <option>EUR</option>
-
-                                    <option>CFA</option>
-                                </select>
-                            </div>
-                        </div>
-                    </form>
-
-                    <div class="flex items-center space-x-6">
-                        <a href="#" class="text-sm font-medium text-white hover:text-gray-100">Sign in</a>
-                        <a href="#" class="text-sm font-medium text-white hover:text-gray-100">Create an account</a>
-                    </div>
-                </div>
-            </div>
-
             <!-- Secondary navigation -->
             <div class="bg-opacity-60 bg-indigo-600">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
