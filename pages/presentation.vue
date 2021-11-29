@@ -1,10 +1,22 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
     <div class="">
-        <HeaderPages/>
-        <div class="flex flex-row w-screen">
-            <nav class="p-10  flex flex-col shadow-xl">
-                <ol role="list flex" class="space-y-4">
+        <HeaderPresentation/>
+        <div class="flex flex-row w-screen max-h-screen pt-16">
+            <nav class="px-4 py-4 flex flex-col shadow-xl max-h-full bg-white">
+                <div class="flex flex-row justify-center pb-4" aria-label="Pagination">
+                    <a @click="changementArrow('left')" class="relative inline-flex items-center px-2 py-2 rounded-l-md border text-indigo-600 bg-white text-sm font-mediu hover:bg-gray-50">
+                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    <a @click="changementArrow('right')" class="relative inline-flex items-center px-2 py-2 rounded-r-md border text-indigo-600 bg-white text-sm font-medium hover:bg-gray-50">
+                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+                <ol role="list flex" class="space-y-4 overflow-scroll shadow-inner py-2 px-4">
                     <li v-for="step in steps" :key="step.name" class="">
                         <a v-if="step.status === 'complete'" :href="step.href" @click="changement(step.nId)" class="group pl-4 py-2 flex flex-col border-l-4 border-indigo-600 hover:border-indigo-800">
                             <span class="text-xs text-indigo-600 font-semibold tracking-wide uppercase group-hover:text-indigo-800">{{ step.id }}</span>
@@ -20,18 +32,6 @@
                         </a>
                     </li>
                 </ol>
-                <div class="flex flex-row justify-center py-4" aria-label="Pagination">
-                    <a @click="changementArrow('left')" class="relative inline-flex items-center px-2 py-2 rounded-l-md border text-indigo-600 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
-                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
-                        </svg>
-                    </a>
-                    <a @click="changementArrow('right')" class="relative inline-flex items-center px-2 py-2 rounded-r-md border text-indigo-600 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
-                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                        </svg>
-                    </a>
-                </div>
             </nav>
             <div class="w-5/6 flex flex-col place-content-center">
                 <div v-if="steps[0].status=='current'" class="">
@@ -51,28 +51,28 @@
                         <div class="relative">
                             <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                                 <div class="max-w-4xl mx-auto">
-                                    <dl class="rounded-lg shadow-lg sm:grid sm:grid-cols-7">
-                                        <div class="col-span-2 flex flex-col border-t border-b border-gray-100 p-6 text-center sm:border-0 sm:border-l sm:border-r">
+                                    <dl class="rounded-lg shadow-lg sm:grid sm:grid-cols-7 bg-indigo-50">
+                                        <div class="col-span-2 flex flex-col border-t border-b border-gray-300 p-6 text-center sm:border-0 sm:border-r">
                                             <dt class="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
                                             Toursits in 2019
                                             </dt>
-                                            <dd class="order-1 text-4xl font-extrabold text-indigo-600">
+                                            <dd class="order-1 text-2xl font-extrabold text-indigo-600">
                                             943 373
                                             </dd>
                                         </div>
-                                        <div class="col-span-3 flex flex-col border-b border-gray-100 p-6 text-center sm:border-0 sm:border-r">
+                                        <div class="col-span-3 flex flex-col border-b border-gray-300 p-6 text-center sm:border-0 sm:border-r sm:border-l">
                                             <dt class="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
                                             Tourism in 2019
                                             </dt>
-                                            <dd class="order-1 text-6xl font-extrabold text-indigo-600">
+                                            <dd class="order-1 text-4xl font-extrabold text-indigo-600">
                                             8% of GDP
                                             </dd>
                                         </div>
-                                        <div class="col-span-2 flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l">
+                                        <div class="col-span-2 flex flex-col border-t border-gray-300 p-6 text-center sm:border-0 sm:border-l">
                                             <dt class="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
                                             Under 15 years old
                                             </dt>
-                                            <dd class="order-1 text-4xl font-extrabold text-indigo-600">
+                                            <dd class="order-1 text-2xl font-extrabold text-indigo-600">
                                             42% of pop
                                             </dd>
                                         </div>
@@ -82,7 +82,7 @@
                         </div>
                     </div>
                 </div>
-                <div v-if="steps[2].status=='current'" class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
+                <div v-if="steps[2].status=='current'" class="mx-auto px-4 max-w-7xl sm:px-6 lg:px-8">
                     <div class="space-y-12">
                         <div class="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
                             <h2 class="text-3xl font-extrabold tracking-tight text-center sm:text-4xl">Who are we?</h2>
@@ -129,7 +129,7 @@
                         </ul>
                     </div>
                 </div>
-                <div v-if="steps[3].status=='current'" class="relative bg-white py-16 sm:py-24 lg:py-32">
+                <div v-if="steps[3].status=='current'" class="relative">
                     <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
                         <h2 class="text-base font-semibold tracking-wider text-indigo-600 uppercase">Exchange better</h2>
                         <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
@@ -194,15 +194,33 @@
                     </div>
                 </div>
                 <div v-if="steps[4].status=='current'" class="container flex flex-col items-center">
-                    <h2 class="text-3xl font-extrabold text-black text-center px-52">
+                    <h2 class="text-2xl font-extrabold text-black text-center px-16">
                         The African landscape of b2c online marketplaces for physical good.
                     </h2>
-                    <img src="~/assets/pictures/africa.jpeg" class="w-96 m-10">
+                    <img src="~/assets/pictures/africa.jpeg" class="w-96 my-4">
                 </div>
                 <div v-if="steps[5].status=='current'">
-
+                    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:mx-16 lg:px-8">
+                        <h2 class="text-3xl font-extrabold text-black text-center px-16">
+                            A few places to be
+                        </h2>
+                        <div class="mt-6 grid grid-cols-2 gap-4 md:grid-cols-2 lg:mt-8">
+                            <div class="col-span-1 flex justify-center py-8 px-8 bg-indigo-50 rounded-2xl shadow-sm">
+                                <img class="max-h-12" src="~assets/pictures/akaa.png" alt="Workcation" />
+                            </div>
+                            <div class="col-span-1 flex justify-center py-8 px-8 bg-indigo-50 rounded-2xl shadow-sm">
+                                <img class="max-h-12" src="~assets/pictures/parcours.png" alt="Mirage" />
+                            </div>
+                            <div class="col-span-1 flex justify-center py-8 px-8 bg-indigo-50 rounded-2xl shadow-sm">
+                                <p class="text-5xl"> 🇹🇬 🇫🇷 </p>
+                            </div>
+                            <div class="col-span-1 flex justify-center py-8 px-8 bg-indigo-50 rounded-2xl shadow-sm">
+                                <p class="text-4xl"> TOGrOw 🎵 </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div v-if="steps[6].status=='current'" class="container max-h-screen flex flex row">
+                <div v-if="steps[6].status=='current'" class="container max-h-screen flex flex-row">
                     <div v-if="charts[0].show" class="flex flex-col items-center">
                         <h2 class="text-3xl font-extrabold text-black text-center p-10">
                             Costs and revenue (5 years)
@@ -232,8 +250,33 @@
                 <div v-if="steps[7].status=='current'">
 
                 </div>
-                <div v-if="steps[8].status=='current'">
-
+                <div v-if="steps[8].status=='current'" class="flex flex-col items-center">
+                    <span class="relative flex flex-col shadow-sm rounded-md m-48 w-96">
+                        <a href="/financialplan">
+                            <button type="button" class="w-full text-indigo-600 relative flex flex-row justify-evenly  px-4 py-2 rounded-t-md border border-gray-300 bg-white text-sm font-medium hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">
+                                Detailed financial plan
+                                <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        </a>
+                        <a href="/businessplan">
+                            <button type="button" class="w-full text-indigo-600 relative flex flex-row justify-evenly px-4 py-2 border border-gray-300 bg-white text-sm font-medium hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">
+                                Detailed business plan
+                                <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        </a>
+                        <a href="/ressources">
+                            <button type="button" class="w-full text-indigo-600 relative flex flex-row justify-evenly px-4 py-2 rounded-b-md border border-gray-300 bg-white text-sm font-medium hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">
+                                Other ressources
+                                <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        </a>
+                    </span>
                 </div>
             </div>
         </div>
@@ -249,8 +292,8 @@ let steps = [
     { nId: 5, id: 'Step 5', name: 'Market and competition analysis', href: '#', status: 'upcoming' },
     { nId: 6, id: 'Step 6', name: 'Marketing plan', href: '#', status: 'upcoming' },
     { nId: 7, id: 'Step 7', name: 'Financial plan', href: '#', status: 'upcoming' },
-    { nId: 8, id: 'Step 8', name: 'Our vision', href: '#', status: 'upcoming' },
-    { nId: 9, id: 'Step 9', name: 'Our core values', href: '#', status: 'upcoming' },
+    { nId: 8, id: 'Step 8', name: 'Our vision and values', href: '#', status: 'upcoming' },
+    { nId: 9, id: 'Step 9', name: 'Detailed plan', href: '#', status: 'upcoming' },
 ]
 let currentStep = 1
 

@@ -2,13 +2,19 @@
   "Footer": {
     "description": "Auto imported from components/footer.vue"
   },
-  "LogoMain": {
-    "description": "Auto imported from components/logo/main.vue"
-  },
   "HeaderHome": {
     "description": "Auto imported from components/header/home.vue"
   },
   "HeaderPages": {
     "description": "Auto imported from components/header/pages.vue"
+  },
+  "HeaderPresentation": {
+    "description": "Auto imported from components/header/presentation.vue"
+  },
+  "LogoEarth": {
+    "description": "Auto imported from components/logo/earth.vue"
+  },
+  "LogoMain": {
+    "description": "Auto imported from components/logo/main.vue"
   }
 }
