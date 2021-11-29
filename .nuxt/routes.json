@@ -28,6 +28,13 @@
     "_name": "_04a6c5fb"
   },
   {
+    "name": "ressources",
+    "path": "/ressources",
+    "component": "/Users/ialgen/Desktop/Prog/togrow-app/pages/ressources.vue",
+    "chunkName": "pages/ressources",
+    "_name": "_2f9d4539"
+  },
+  {
     "name": "tests",
     "path": "/tests",
     "component": "/Users/ialgen/Desktop/Prog/togrow-app/pages/tests.vue",

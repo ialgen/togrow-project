@@ -8,6 +8,7 @@ const _2e46b24a = () => interopDefault(import('../pages/businessplan.vue' /* web
 const _238a86be = () => interopDefault(import('../pages/financialplan.vue' /* webpackChunkName: "pages/financialplan" */))
 const _3b7bf3f6 = () => interopDefault(import('../pages/men.vue' /* webpackChunkName: "pages/men" */))
 const _04a6c5fb = () => interopDefault(import('../pages/presentation.vue' /* webpackChunkName: "pages/presentation" */))
+const _2f9d4539 = () => interopDefault(import('../pages/ressources.vue' /* webpackChunkName: "pages/ressources" */))
 const _314071e0 = () => interopDefault(import('../pages/tests.vue' /* webpackChunkName: "pages/tests" */))
 const _5bb44a6d = () => interopDefault(import('../pages/women.vue' /* webpackChunkName: "pages/women" */))
 const _06ec3d7e = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
@@ -39,6 +40,10 @@ export const routerOptions = {
     path: "/presentation",
     component: _04a6c5fb,
     name: "presentation"
+  }, {
+    path: "/ressources",
+    component: _2f9d4539,
+    name: "ressources"
   }, {
     path: "/tests",
     component: _314071e0,

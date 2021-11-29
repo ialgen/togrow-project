@@ -248,12 +248,30 @@
                     
                 </div>
                 <div v-if="steps[7].status=='current'">
-
+                    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:mx-16 lg:px-8">
+                        <h2 class="text-3xl font-extrabold text-black text-center px-16">
+                            Our vision and values
+                        </h2>
+                        <div class="mt-6 grid grid-cols-2 gap-4 md:grid-cols-2 lg:mt-8">
+                            <div class="col-span-1 flex justify-center p-2 bg-indigo-50 rounded-2xl shadow-sm">
+                                <img class="max-h-20" src="~assets/pictures/unwomen.png" alt="Workcation" />
+                            </div>
+                            <div class="col-span-1 flex justify-center p-2 bg-indigo-50 rounded-2xl shadow-sm">
+                                <img class="max-h-20" src="~assets/pictures/community.png" alt="Workcation" />
+                            </div>
+                            <div class="col-span-1 flex justify-center p-2 bg-indigo-50 rounded-2xl shadow-sm">
+                                <img class="max-h-20" src="~assets/pictures/ecology.png" alt="Workcation" />
+                            </div>
+                            <div class="col-span-1 flex justify-center p-2 bg-indigo-50 rounded-2xl shadow-sm">
+                                <img class="max-h-20" src="~assets/pictures/bcorp.png" alt="Workcation" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div v-if="steps[8].status=='current'" class="flex flex-col items-center">
-                    <span class="relative flex flex-col shadow-sm rounded-md m-48 w-96">
+                    <span class="relative flex flex-col shadow-lg bg-indigo-50 rounded-md w-96">
                         <a href="/financialplan">
-                            <button type="button" class="w-full text-indigo-600 relative flex flex-row justify-evenly  px-4 py-2 rounded-t-md border border-gray-300 bg-white text-sm font-medium hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">
+                            <button type="button" class="w-full text-indigo-600 relative flex flex-row justify-evenly px-4 py-2 rounded-t-md border border-indigo-300  text-sm font-medium hover:bg-indigo-300 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">
                                 Detailed financial plan
                                 <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                     <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
@@ -261,16 +279,32 @@
                             </button>
                         </a>
                         <a href="/businessplan">
-                            <button type="button" class="w-full text-indigo-600 relative flex flex-row justify-evenly px-4 py-2 border border-gray-300 bg-white text-sm font-medium hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">
+                            <button type="button" class="w-full text-indigo-600 relative flex flex-row justify-evenly px-4 py-2 border border-indigo-300  text-sm font-medium hover:bg-indigo-300 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">
                                 Detailed business plan
                                 <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                     <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                                 </svg>
                             </button>
                         </a>
-                        <a href="/ressources">
-                            <button type="button" class="w-full text-indigo-600 relative flex flex-row justify-evenly px-4 py-2 rounded-b-md border border-gray-300 bg-white text-sm font-medium hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">
-                                Other ressources
+                        <a href="https://ecomconnect.org/page/african-marketplace-explorer">
+                            <button type="button" class="w-full text-indigo-600 relative flex flex-row justify-evenly px-4 py-2 border border-indigo-300  text-sm font-medium hover:bg-indigo-300 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">
+                                African marketplace explorer
+                                <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        </a>
+                        <a href="http://www.growthmosaic.com/files/Women-Matter-Africa.pdf">
+                            <button type="button" class="w-full text-indigo-600 relative flex flex-row justify-evenly px-4 py-2 border border-indigo-300  text-sm font-medium hover:bg-indigo-300 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">
+                                Women Matter - Africa
+                                <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        </a>
+                        <a href="https://bcorporation.net/">
+                            <button type="button" class="w-full text-indigo-600 relative flex flex-row justify-evenly px-4 py-2 rounded-b-md border border-indigo-300  text-sm font-medium hover:bg-indigo-300 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">
+                                B Corporation
                                 <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                     <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                                 </svg>
@@ -293,7 +327,7 @@ let steps = [
     { nId: 6, id: 'Step 6', name: 'Marketing plan', href: '#', status: 'upcoming' },
     { nId: 7, id: 'Step 7', name: 'Financial plan', href: '#', status: 'upcoming' },
     { nId: 8, id: 'Step 8', name: 'Our vision and values', href: '#', status: 'upcoming' },
-    { nId: 9, id: 'Step 9', name: 'Detailed plan', href: '#', status: 'upcoming' },
+    { nId: 9, id: 'Step 9', name: 'Detailed plan and ressources', href: '#', status: 'upcoming' },
 ]
 let currentStep = 1
 

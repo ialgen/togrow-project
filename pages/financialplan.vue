@@ -40,7 +40,7 @@
             <h2>Profit yearly evolution</h2>
             <img class="max-h-96 object-scale-down rounded-lg  shadow-2xl" src="~/assets/pictures/profit.png" alt=""  />
             <h2>Price repartition</h2>
-            <img class="max-h-96 object-scale-down rounded-lg border shadow-2xl" src="~/assets/pictures/price.png" alt="" />
+            <img class="max-h-96 object-scale-down rounded-lg shadow-2xl" src="~/assets/pictures/price.png" alt="" />
         </div>
     </div>
   </div>

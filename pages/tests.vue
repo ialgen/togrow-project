@@ -13,7 +13,7 @@
                     <img class="max-h-20" src="~assets/pictures/community.png" alt="Workcation" />
                 </div>
                 <div class="col-span-1 flex justify-center p-2 bg-indigo-50 rounded-2xl shadow-sm">
-                    <LogoEarth/>
+                    <img class="max-h-20" src="~assets/pictures/ecology.png" alt="Workcation" />
                 </div>
                 <div class="col-span-1 flex justify-center p-2 bg-indigo-50 rounded-2xl shadow-sm">
                     <img class="max-h-20" src="~assets/pictures/bcorp.png" alt="Workcation" />

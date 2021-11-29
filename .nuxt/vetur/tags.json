@@ -11,9 +11,6 @@
   "HeaderPresentation": {
     "description": "Auto imported from components/header/presentation.vue"
   },
-  "LogoEarth": {
-    "description": "Auto imported from components/logo/earth.vue"
-  },
   "LogoMain": {
     "description": "Auto imported from components/logo/main.vue"
   }
