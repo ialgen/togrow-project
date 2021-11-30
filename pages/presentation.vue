@@ -193,12 +193,6 @@
                         </div>
                     </div>
                 </div>
-                <div v-if="steps[5].status=='current'" class="container flex flex-col items-center">
-                    <h2 class="text-2xl font-extrabold text-black text-center px-16">
-                        The African landscape of b2c online marketplaces for physical good.
-                    </h2>
-                    <img src="~/assets/pictures/africa.jpeg" class="w-96 my-4">
-                </div>
                 <div v-if="steps[4].status=='current'">
                     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:mx-16 lg:px-8">
                         <h2 class="text-3xl font-extrabold text-black text-center px-16">
@@ -219,6 +213,12 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div v-if="steps[5].status=='current'" class="container flex flex-col items-center">
+                    <h2 class="text-2xl font-extrabold text-black text-center px-16">
+                        The African landscape of b2c online marketplaces for physical good.
+                    </h2>
+                    <img src="~/assets/pictures/africa.jpeg" class="w-96 my-4">
                 </div>
                 <div v-if="steps[6].status=='current'" class="container max-h-screen flex flex-row">
                     <div v-if="charts[0].show" class="flex flex-col items-center">
