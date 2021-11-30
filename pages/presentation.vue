@@ -200,16 +200,16 @@
                         </h2>
                         <div class="mt-6 grid grid-cols-2 gap-4 md:grid-cols-2 lg:mt-8">
                             <div class="col-span-1 flex justify-center py-8 px-8 bg-indigo-50 rounded-2xl shadow-sm">
-                                <img class="max-h-12" src="~assets/pictures/akaa.png" alt="Workcation" />
+                                <img class="max-h-12" src="~assets/pictures/akaa.png" alt="" />
                             </div>
                             <div class="col-span-1 flex justify-center py-8 px-8 bg-indigo-50 rounded-2xl shadow-sm">
-                                <img class="max-h-12" src="~assets/pictures/parcours.png" alt="Mirage" />
+                                <img class="max-h-12" src="~assets/pictures/parcours.png" alt="" />
                             </div>
                             <div class="col-span-1 flex justify-center py-8 px-8 bg-indigo-50 rounded-2xl shadow-sm">
-                                <p class="text-5xl"> 🇹🇬 🇫🇷 </p>
+                                <img class="max-h-12" src="~assets/pictures/drapeau.png" alt="" />
                             </div>
                             <div class="col-span-1 flex justify-center py-8 px-8 bg-indigo-50 rounded-2xl shadow-sm">
-                                <p class="text-4xl"> TOGrOw 🎵 </p>
+                                <p class="text-4xl"> TOGrOw arts </p>
                             </div>
                         </div>
                     </div>
