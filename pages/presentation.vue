@@ -193,13 +193,13 @@
                         </div>
                     </div>
                 </div>
-                <div v-if="steps[4].status=='current'" class="container flex flex-col items-center">
+                <div v-if="steps[5].status=='current'" class="container flex flex-col items-center">
                     <h2 class="text-2xl font-extrabold text-black text-center px-16">
                         The African landscape of b2c online marketplaces for physical good.
                     </h2>
                     <img src="~/assets/pictures/africa.jpeg" class="w-96 my-4">
                 </div>
-                <div v-if="steps[5].status=='current'">
+                <div v-if="steps[4].status=='current'">
                     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:mx-16 lg:px-8">
                         <h2 class="text-3xl font-extrabold text-black text-center px-16">
                             A few places to be
@@ -323,8 +323,8 @@ let steps = [
     { nId: 2, id: 'Step 2', name: 'Togo in global economy', href: '#', status: 'upcoming' },
     { nId: 3, id: 'Step 3', name: 'Our team', href: '#', status: 'upcoming' },
     { nId: 4, id: 'Step 4', name: 'Our products', href: '#', status: 'upcoming' },
-    { nId: 5, id: 'Step 5', name: 'Market and competition analysis', href: '#', status: 'upcoming' },
-    { nId: 6, id: 'Step 6', name: 'Marketing plan', href: '#', status: 'upcoming' },
+    { nId: 5, id: 'Step 5', name: 'Marketing plan', href: '#', status: 'upcoming' },
+    { nId: 6, id: 'Step 6', name: 'Market and competition analysis', href: '#', status: 'upcoming' },
     { nId: 7, id: 'Step 7', name: 'Financial plan', href: '#', status: 'upcoming' },
     { nId: 8, id: 'Step 8', name: 'Our vision and values', href: '#', status: 'upcoming' },
     { nId: 9, id: 'Step 9', name: 'Detailed plan and ressources', href: '#', status: 'upcoming' },
