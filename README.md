@@ -1,6 +1,6 @@
 # togrow-project
 
-This repo contains the code of a __fictional__ startup.
+This repo contains the code of a __fictional__ startup's website.
 
 Useful links :
 - https://www.togrow.fr/
